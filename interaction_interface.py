@@ -54,9 +54,9 @@ def interface(handbook):
 def form_selection():
     while True:
         print("Телефонный справочник")
-        print("Доступные форматы для чтения\n1 - csv\n2 - exel\n3 - txt\n4 - html\n")
+        print("Доступные форматы для чтения\n1 - csv\n2 - exel\n3 - txt\n4 - html\n5 - json\n")
         new_input = input("Выберите формат: ")
-        if new_input not in ['1', '2', '3', '4']:
+        if new_input not in ['1', '2', '3', '4', '5']:
             print(f"Такого действия нету: {new_input}")
             continue
         else:

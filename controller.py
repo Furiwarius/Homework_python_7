@@ -3,6 +3,7 @@ import interaction_interface as ii
 from csv_module import csv_write, csv_read
 from exel_module import exel_write, exel_read
 from htmal_module import html_write, html_read
+from json_module import json_read, json_write
 from txt_module import txt_write, txt_read
 
 
@@ -16,6 +17,8 @@ def form():
         handbook = txt_read()
     elif form == '4':
         handbook = html_read()
+    elif form == '5':
+        handbook = json_read()
     return handbook
 
 
@@ -27,3 +30,4 @@ def init():
         exel_write(new_handbook)
         html_write(new_handbook)
         txt_write(new_handbook)
+        json_write(new_handbook)
